@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputContainer {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
+  padding: 8px;
+  margin-right: 5px;
+  width: 400px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ListContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.List {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.List button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.done {
+  text-decoration: line-through;
+}
+
+.DoneListContainer{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.warningText{
+  font-size: 13px;
+  color: #dc3545;
+}
+
+
+@media (max-width: 768px){
+
+  .input {
+    padding: 8px;
+    margin-right: 5px;
+    width: 200px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .List {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .ListContainer {
+    max-width: 400px;
+    margin: 4px;
   }
 }
