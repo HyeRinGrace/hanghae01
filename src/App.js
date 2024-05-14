@@ -25,7 +25,11 @@ function App() {
   const handleDelete = (itemToDelete) => {
     // 아이템 삭제
     setArr(arr.filter((item) => item !== itemToDelete));
-    setDone(done.filter((item) => item !== itemToDelete));
+    
+    // Done 리스트에서 해당 아이템이 있는지 확인하고 제거
+    if (done.includes(itemToDelete)) {
+      setDone(done.filter((item) => item !== itemToDelete));
+    }
   };
 
   // 리스트 클릭 시, 동작하는 함수
