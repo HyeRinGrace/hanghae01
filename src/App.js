@@ -21,7 +21,6 @@ function App() {
     setInput('');
   };
 
-  // 삭제 버튼 클릭 시, 동작하는 함수 
   const handleDelete = (itemToDelete) => {
     // 아이템 삭제
     setArr(arr.filter((item) => item !== itemToDelete));
@@ -32,14 +31,17 @@ function App() {
     }
   };
 
+  
+
   // 리스트 클릭 시, 동작하는 함수
   const handleDone = (item) => {
     if (!done.includes(item)) {
-      setDone([...done, item]); // Done 리스트에 추가
+      setDone([...done, item]);
     } else {
-      setDone(done.filter((doneItem) => doneItem !== item)); // Done 리스트에서 제거
+      setDone(done.filter((doneItem) => doneItem !== item));
     }
   };
+
 
   //렌더링 부분
   return (
