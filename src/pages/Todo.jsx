@@ -194,7 +194,7 @@ function Todo() {
         </Col>
       </InputContainer>
       <ListContainer className='ListContainer'>
-        {todos.length > 0 ? <h2>Working...</h2> : null}
+        {todos.length > 0 ? <h2>Working...</h2> : <h2> Todo 리스트를 만들어주세요!</h2>}
         <Row>
           {todos.map((item) => (
             <Col key={item.id}>
