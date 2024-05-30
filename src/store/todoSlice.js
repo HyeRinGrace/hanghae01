@@ -16,6 +16,8 @@ export const deleteTodo = (id) => ({
   payload: id,
 });
 
+
+//complete
 export const completeTodo = (id) => ({
   type: COMPLETE_TODO,
   payload: id,
