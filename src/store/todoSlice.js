@@ -23,6 +23,7 @@ export const completeTodo = (id) => ({
   payload: id,
 });
 
+//incomplete
 export const incompleteTodo = (id) => ({
   type: INCOMPLETE_TODO,
   payload: id,
