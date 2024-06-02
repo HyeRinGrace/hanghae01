@@ -29,7 +29,7 @@ export const incompleteTodo = (id) => ({
   payload: id,
 });
 
-// 초기 상태
+// 초기 상태ㅇㅇ
 const initialState = {
   todos: [],
   done: [],
